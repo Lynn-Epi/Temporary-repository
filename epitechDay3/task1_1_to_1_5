@@ -1,0 +1,20 @@
+#task1.1
+sentence = str("MOJABI GHOST")
+print("task1.1")
+print(sentence)
+
+#task1.2
+print("task1.2")
+print(sentence[0])
+
+#task1.3
+print("task1.3")
+print(sentence[-1])
+
+#task1.4
+print("task1.4")
+print(sentence[4:10])
+
+#task1.5
+print("task1.5")
+print(sentence.lower())

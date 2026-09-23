@@ -1,0 +1,6 @@
+number = int(input("insert a number:"))
+addition = int(input("insert another number:"))
+
+result = number + addition
+
+print(result) 

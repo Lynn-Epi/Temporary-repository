@@ -1,0 +1,5 @@
+sentence = input("Enter a sentence: ")
+print(sentence.replace("tu", "ta"))
+
+
+

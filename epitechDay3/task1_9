@@ -1,0 +1,8 @@
+sentence = "abcedefghij"
+
+skip1RightToLeft = sentence[::-2]
+takeFrom1to4 = skip1RightToLeft[:5]
+invert = takeFrom1to4[::-1]
+take4onward = invert[3:]
+
+print(take4onward)

@@ -1,0 +1,5 @@
+
+string = input("write you string:")
+
+print(string * 10)
+

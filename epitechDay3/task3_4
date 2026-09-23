@@ -1,0 +1,13 @@
+finalWord = " "
+
+sentence = input("write your sentence: ")
+
+
+
+
+words = sentence.split()
+
+for word in words:
+    finalWord = finalWord + word[0]
+
+print(finalWord)
