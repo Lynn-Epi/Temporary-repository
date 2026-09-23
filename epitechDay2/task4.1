@@ -1,0 +1,10 @@
+pi = 0
+sign = 1
+
+for denominator in range(1, 10000000, 2):
+    pi = pi + sign * (1 / denominator)
+    sign = sign * -1
+
+pi = pi * 4
+
+print(round(pi, 6))

@@ -1,0 +1,8 @@
+fraction = 0
+
+for denominator in range(99999, 0, -2):
+    fraction = denominator ** 2 / (6 + fraction)
+
+pi =  fraction
+
+print("pi-3=", round(pi, 6))
