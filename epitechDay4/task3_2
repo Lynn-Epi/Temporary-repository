@@ -1,0 +1,17 @@
+text = input("Enter the cipher to decode: ")
+key = int(input("Enter your key: "))
+finalText = ""
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+
+for letter in text:
+    if letter in alphabet:
+        position = alphabet.index(letter)
+        newPosition = (position - key) % 26
+        newLetter = alphabet[newPosition]
+        finalText += newLetter
+    else: 
+        finalText += letter
+
+
+print(finalText)

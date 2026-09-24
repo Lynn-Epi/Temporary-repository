@@ -1,0 +1,21 @@
+number = int(input("type a number: "))
+
+fPrint = True
+
+if (number == 42):
+    print("a")
+    fPrint = False
+if (number <= 21 ):
+    print("b")
+    fPrint = False
+if number % 2 == 0:
+    print("c")
+    fPrint = False
+if (number/2 < 21):
+    print("d")
+    fPrint = False
+if number % 2 != 0 and number >= 45:
+    print("e")
+    fPrint = False
+if fPrint:
+    print("f")

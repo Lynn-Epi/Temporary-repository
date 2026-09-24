@@ -1,0 +1,33 @@
+english = [
+    8, 1, 3, 4, 13, 2, 2, 6, 7, 0, 1, 4, 2,
+    7, 8, 2, 0, 6, 6, 9, 3, 1, 2, 0, 2, 0
+]
+
+text = input("Enter the cipher to decode: ")
+keyLength = int(input("Enter your key lenght: "))
+finalText = ""
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+columns = []
+arrayTextPercentages = []
+arrayLoppingOrder = 0
+
+for i in range(keyLength):
+    columns.append([])
+
+for letter in text:
+    columns[arrayLoppingOrder].append(letter)
+    arrayLoppingOrder += 1
+    if arrayLoppingOrder == keyLength:
+        arrayLoppingOrder = 0
+
+for column in columns:
+    if letter in alphabet:
+    shiftedColumn = []
+    for letter in column:
+            position = alphabet.index(letter)
+            newPosition = (position + 1) % 26
+            newLetter = alphabet[newPosition]
+            shiftedColumn.append(newLetter)
+
+
+#NOT FINISHED

@@ -1,0 +1,8 @@
+text = (input("enter your text: "))
+
+doubledText = ""
+
+for letters in text:
+    doubledText += letters * 2
+
+print(doubledText)

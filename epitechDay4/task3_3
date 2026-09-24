@@ -1,0 +1,25 @@
+
+finalText = ""
+text = input("Enter the cipher to decode: ")
+key = (input("Enter your key: "))
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+keyIntoNumbers = []
+
+for keyLength in range(len(text)):
+    for letterK in key:
+        kPosition = alphabet.index(letterK)
+        keyIntoNumbers.append(kPosition)
+
+for letter in text:
+    if letter in alphabet:
+        position = alphabet.index(letter)
+        newPosition = (position - keyIntoNumbers[0]) % 26
+        keyIntoNumbers.pop(0)
+        newLetter = alphabet[newPosition]
+        finalText += newLetter  
+    else: 
+        finalText += letter
+
+print(finalText)    

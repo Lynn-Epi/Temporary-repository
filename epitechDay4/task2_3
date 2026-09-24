@@ -1,0 +1,3 @@
+for numbers2print in range(10000,0,-1):
+    if numbers2print % 7 == 0:
+        print(numbers2print)

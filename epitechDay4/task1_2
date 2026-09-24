@@ -1,0 +1,4 @@
+number = int(input("insert a number: "))
+
+if (number == 42):
+    print("This is correct!")
