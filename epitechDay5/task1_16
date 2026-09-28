@@ -1,0 +1,5 @@
+firstList = [1,1,1,1,2,2,2,2,2]
+secondList = [42,'42', 42.0, 21+21, 42*10/10]
+
+testSet = list(set(secondList))
+print(testSet)

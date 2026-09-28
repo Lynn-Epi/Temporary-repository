@@ -1,0 +1,31 @@
+myList = [1,2,3,4,5]
+print("task1_1")
+print(myList[0])
+
+print("task1_2")
+print(myList[-1])
+
+#print("task1_3")
+myList.append(42)
+myList.append("forty-two")
+
+print("task1_4")
+print(myList)
+
+for item in myList:
+    print(item)
+
+#print("task1_5")
+myList.pop(-1)
+
+#print("task1_6")
+myList.insert(0, "newItem")
+
+print("task1_7")
+print(myList[1:4])
+
+print("task1_8")
+print(myList[::-1])
+
+#print("task1_9")
+myList.extend(range(11, 21))

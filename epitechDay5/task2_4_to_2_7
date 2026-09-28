@@ -1,0 +1,16 @@
+types = {
+    "Electric": [],
+    "Grass": [],
+    "Fire": []
+}
+
+types["Electric"].append("Pikachu")
+types["Grass"].append("Bulbasaur")
+types["Fire"].append("Charmander")
+types["Grass"].append("Leafon")
+
+for pokemon_type in ["Fire", "Grass"]:
+    types[pokemon_type].append("Scovillain")
+
+
+print(types.keys())
