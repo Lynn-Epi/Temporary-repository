@@ -1,0 +1,12 @@
+import os
+
+def listFiles(folder):
+    for item in os.listdir(folder):
+        path = os.path.join(folder, item)
+
+        print(path)
+
+        if os.path.isdir(path):
+            listFiles(path)
+
+listFiles(".")

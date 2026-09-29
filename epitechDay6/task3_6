@@ -1,0 +1,6 @@
+names = ["Joe", "William", "Jack", "Averell"]
+
+names.sort(key=len)
+#names.sort(key=len, reverse = True)
+
+print(names)

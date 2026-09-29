@@ -1,0 +1,13 @@
+base = int(input("enter your base number: "))
+power = int(input("enter your power/exponent number: "))
+
+
+def powering():
+    result = 1
+
+    for number in range(power):
+        result = result * base
+
+    return result
+
+print(powering())

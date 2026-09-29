@@ -1,0 +1,48 @@
+x = int(input("Desired amount of sanwiches: "))
+type = input ("Type, veggie or regular: ")
+
+if type == "veggie":
+    veggie = True
+else:
+    veggie = False
+
+
+def bread():
+    print("<//////////>")
+def lettuce():
+    print("~~~~~~~~~~~~")
+def tomato():
+    print("O O O O O O")
+def ham():
+    print("============")
+
+def sandwich():
+    bread()
+    lettuce()
+    tomato()
+    ham()
+    ham()
+    bread()
+
+def veggieSandwich():
+    bread()
+    lettuce()
+    tomato()
+    lettuce()
+    tomato()
+    bread()
+
+def makeSandwiches(x):
+
+    if x % 1 != 0:
+        print("I can't do this")
+    elif veggie == False:
+        for number in range(x):
+            sandwich()
+            print()
+    else:
+        for number in range(x):
+                    veggieSandwich()
+                    print()
+
+makeSandwiches(x)
